@@ -31,6 +31,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* Basic Types */}
       <Greet name="Vishwas" isLoggedIn={false} />
       <Person name={personName} />
       <PersonList names={nameList} />
