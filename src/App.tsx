@@ -1,6 +1,8 @@
 import "./App.css";
 import { Button } from "./components/Button";
 import { Container } from "./components/Container";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
+import { Box } from "./components/context/Box";
 import { Greet } from "./components/Greet";
 import { Heading } from "./components/Heading";
 import { Input } from "./components/Input";
@@ -51,6 +53,10 @@ function App() {
 
       {/* Style Props */}
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
