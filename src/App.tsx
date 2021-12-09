@@ -34,8 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* Basic Types */}
-      <Greet name="Vishwas" isLoggedIn={false} />
+      {/* <Greet name="Vishwas" isLoggedIn={false} />
       <Person name={personName} />
       <PersonList names={nameList} />
       <Status status="loading" />
@@ -43,7 +42,6 @@ function App() {
         <Heading>Oscar goes to Leonardo Dicaprio!</Heading>
       </Oscar>
 
-      {/* Event Props */}
       <Button
         handleClick={(event, id) => {
           console.log("Button clicked", event, id);
@@ -51,12 +49,11 @@ function App() {
       />
       <Input value="" handleChange={(event) => console.log(event)} />
 
-      {/* Style Props */}
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
 
       <ThemeContextProvider>
         <Box />
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
     </div>
   );
 }
