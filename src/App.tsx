@@ -11,6 +11,8 @@ import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
 import { Counter } from "./components/class/Counter";
+import { Profile } from "./components/auth/Profile";
+import { Private } from "./components/auth/Private";
 
 function App() {
   const personName = {
@@ -54,9 +56,12 @@ function App() {
 
       <ThemeContextProvider>
         <Box />
-      </ThemeContextProvider> */}
+      </ThemeContextProvider> 
 
       <Counter message="The count value is" />
+      */}
+
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
