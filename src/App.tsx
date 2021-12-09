@@ -10,6 +10,7 @@ import { Oscar } from "./components/Oscar";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
+import { Counter } from "./components/class/Counter";
 
 function App() {
   const personName = {
@@ -54,6 +55,8 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider> */}
+
+      <Counter message="The count value is" />
     </div>
   );
 }
